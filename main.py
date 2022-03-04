@@ -78,7 +78,7 @@ class Dealer:
 
 
 def new_screen():
-  print ("\n" * 15)
+  print ("\n" * 30)
   
 def player_value(player_val, cards):
   player_val = 0
@@ -185,6 +185,8 @@ while game_on == True:
     game_on = another_round(game_on)
     break
   else:
+
+    print (f"you can see one of the dealer's cards.. it is a {dealer_one.hand[0]}")
     action = input("do you want to stick or twist? enter t or s")
     
     while action == "t":
